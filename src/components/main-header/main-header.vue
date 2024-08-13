@@ -837,7 +837,7 @@ onUnmounted(() => {
       .header-nav-item {
         min-width: 70px;
         text-align: center;
-        border-left: 1px solid #4f4f4f;
+        border-left: 1px solid #bebebe;
         height: 28px;
         line-height: 28px;
         cursor: pointer;
@@ -994,7 +994,7 @@ onUnmounted(() => {
       .drawer-content {
         height: 100%;
         font-size: 16px;
-        border-top: 1px solid #000;
+        border-top: 1px solid #bebebe;
         // border-bottom: 1px solid var(--color-e3e9ef);
         overflow-y: auto;
         .goods-list {
@@ -1002,7 +1002,7 @@ onUnmounted(() => {
             display: flex;
             // align-items: center;
             padding: 20px 0;
-            border-bottom: 1px solid #000;
+            border-bottom: 1px solid #bebebe;
             // &:last-child {
             //   border-bottom: none;
             // }
@@ -1315,7 +1315,7 @@ onUnmounted(() => {
 .nav-item-box {
   font-size: 16px;
   color: #333333;
-  border-left: 1px solid rgba(51, 51, 51, 1);
+  border-left: 1px solid #bebebe;
   padding-right: 50px;
   margin-bottom: 30px;
   .nav-item-label {
