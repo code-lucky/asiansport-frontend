@@ -46,8 +46,8 @@ onMounted(() => {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-333333);
-  color: #fff;
+  background-color: var(--color-fff);
+  // color: #fff;
 }
 
 .payment-info {
@@ -78,7 +78,7 @@ onMounted(() => {
 }
 
 a {
-  color: var(--color-c09456) !important;
+  color: var(--color-006838) !important;
   text-decoration: underline;
 }
 </style>

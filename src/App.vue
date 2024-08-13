@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <main-header ref="mainHeaderRef" />
-    <div class="app-content" :style="{ 'padding-top': height + 'px','min-height': 'calc(100vh - 210px - ' + height + 'px)'}">
+    <div class="app-content" :style="{ 'padding-top': height + 'px','min-height': 'calc(100vh)'}">
       <!-- <div>{{ $t('focus') }}</div> -->
       <RouterView />
     </div>

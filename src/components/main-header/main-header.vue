@@ -123,7 +123,7 @@
                     <div>
                       <div class="goods-image" @click="goEvent(item.id)">
                         <img v-if="item.cover_image" class="img" :src="item.cover_image ? item.cover_image : getAssetURL('default.png')" alt="" />
-                        <img v-else style="width: 100px; height: 100px" lass="img" :src="getAssetURL('default.png')" alt="" />
+                        <img v-else style="width: 100px; height: 100px;object-fit: contain;" lass="img" :src="getAssetURL('default.png')" alt="" />
                       </div>
                     </div>
                     <div class="goods-content">
@@ -1038,7 +1038,7 @@ onUnmounted(() => {
               }
 
               .goods-content-items {
-                color: rgba(239, 239, 239, 1);
+                // color: rgba(239, 239, 239, 1);
                 font-size: 16px;
                 display: flex;
                 align-items: center;
@@ -1046,7 +1046,7 @@ onUnmounted(() => {
                 font-weight: bold;
                 margin-top: 10px;
                 .goods-content-label {
-                  color: rgba(255, 255, 255, 1);
+                  // color: rgba(255, 255, 255, 1);
                   font-size: 16px;
                 }
                 .goods-content-item {
@@ -1056,7 +1056,7 @@ onUnmounted(() => {
               }
 
               .goods-content-items-line {
-                color: rgba(239, 239, 239, 1);
+                // color: rgba(239, 239, 239, 1);
                 font-size: 16px;
                 display: flex;
                 align-items: center;
@@ -1066,7 +1066,7 @@ onUnmounted(() => {
                 flex-direction: column;
                 align-items: flex-start;
                 .goods-content-label {
-                  color: rgba(255, 255, 255, 1);
+                  // color: rgba(255, 255, 255, 1);
                   font-size: 16px;
                 }
                 .goods-content-item {
@@ -1076,7 +1076,7 @@ onUnmounted(() => {
               }
 
               .goods-content-qty {
-                color: rgba(239, 239, 239, 1);
+                // color: rgba(239, 239, 239, 1);
                 font-size: 16px;
                 display: flex;
                 align-items: center;

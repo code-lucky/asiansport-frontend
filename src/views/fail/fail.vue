@@ -11,10 +11,10 @@
       <div class="info-test mb10">{{ $t('test_tip1') }} {{ order_no }}</div>
       <div class="info-test mb10">
         {{ $t('test_tip2') }}
-        <a style="color: blue" :href="`https://frontend.fencinghall.net/order?order_no=${order_no}`" target="_blank">{{ $t('index.order_inquiry') }}</a
+        <a style="color: blue" :href="`https://www.sportsFay.com/order?order_no=${order_no}`" target="_blank">{{ $t('index.order_inquiry') }}</a
         >{{ $t('test_tip6') }}。
       </div>
-      <div class="info-test">{{ $t('test_tip3') }}： <a style="color: blue" href="https://info@fencinghall.net" target="_blank">info@fencinghall.net</a></div>
+      <div class="info-test">{{ $t('test_tip3') }}： <a style="color: blue" href="https://info@sportsFay.com" target="_blank">info@sportsFay.com</a></div>
       <!-- <div class="info-test">{{ $t('phone_tip') }} : 96530815</div> -->
       <!-- <div class="info-test">電郵: info@flying-journey.com.hk</div> -->
     </div>
@@ -50,8 +50,8 @@ onMounted(() => {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-333333);
-  color: #FFF;
+  background-color: var(--color-fff);
+  // color: #FFF;
 }
 
 .payment-info {
@@ -83,7 +83,7 @@ onMounted(() => {
 }
 
 a{
-  color: var(--color-c09456) !important;
+  color: var(--color-006838) !important;
   text-decoration: underline;
 }
 </style>

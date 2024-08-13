@@ -89,7 +89,7 @@ onMounted(() => {
 <style scoped lang="less">
 .order {
   padding: 40px 20px;
-  background-color: var(--color-212529);
+  background-color: var(--color-ffffff);
 }
 
 .order-search {

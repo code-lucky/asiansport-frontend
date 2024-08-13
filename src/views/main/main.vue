@@ -61,13 +61,13 @@
           <div class="product-item" v-for="(item, idx) in productList" :key="idx" @click="getDetail(item)">
             <div class="product-img">
               <img v-if="item.cover_image" :src="item.cover_image ? item.cover_image : getAssetURL('default.png')" alt="" />
-              <img v-else style="width: 100px; height: 100px" :src="getAssetURL('default.png')" alt="" />
+              <img v-else style="width: 100px; height: 100px;object-fit: contain;" :src="getAssetURL('default.png')" alt="" />
             </div>
             <div class="product-detail">{{ item[langurageType('name_')] }}</div>
             <div class="product-info">
               <div>${{ item.price }}</div>
               <div>
-                <img :src="getAssetURL('cart-icon.png')" />
+                <img :src="getAssetURL('cart-icon.svg')" />
               </div>
             </div>
           </div>

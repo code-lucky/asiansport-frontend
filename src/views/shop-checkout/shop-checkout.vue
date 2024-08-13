@@ -187,7 +187,7 @@
                     <div>
                       <div class="goods-image" @click="goEvent(item.id)">
                         <img class="img" v-if="item.cover_image" :src="item.cover_image ? item.cover_image : getAssetURL('default.png')" alt="" />
-                        <img class="img" style="width: 100px; height: 100px" v-else :src="getAssetURL('default.png')" alt="" />
+                        <img class="img" style="width: 100px; height: 100px;object-fit: contain;" v-else :src="getAssetURL('default.png')" alt="" />
                       </div>
                     </div>
                     <div class="goods-content">
@@ -671,9 +671,13 @@ const changeQtyHandle = debounce((item) => {
         }, 0)
 
         item.qty = Number(result.qty) - Number(otherQty)
-        useShop.changeQtyAction(item.virtual_id, item.qty)
+        useShop.changeQtyAction(item.virtual_id, item.qty).then(res=>{
+          changeShipping()
+        })
       } else {
-        useShop.changeQtyAction(item.virtual_id, item.qty)
+        useShop.changeQtyAction(item.virtual_id, item.qty).then(res=>{
+          changeShipping()
+        })
       }
       const resultQty = result.qty
     }

@@ -98,7 +98,7 @@ const useShopStore = defineStore('shop', {
                     return item
                 })
                 cache.setCache('cartList', this.cartListCache)
-                await this.getCartListAction()
+                // await this.getCartListAction()
                 return { status: true, message: 'Change Successly!' }
             } catch (e) {
                 return { status: false, message: 'Change Failed!' }

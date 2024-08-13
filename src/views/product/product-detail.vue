@@ -34,7 +34,7 @@
                   <div
                     class="info-imgs-item"
                     v-if="Math.floor(imgIndex / 3) === Math.floor(idx / 3)"
-                    :style="{ border: imgIndex == idx ? '2px solid var(--color-c09456)' : '' }"
+                    :style="{ border: imgIndex == idx ? '2px solid var(--color-006838)' : '' }"
                   >
                     <img :src="item.cover_filenamepath" alt="" @click="setImgsIndex(idx)" />
                   </div>
@@ -121,8 +121,8 @@
             </div>
             <!-- <div class="info-spec-price">${{ totalPrice }}</div> -->
             <div class="info-spec-btn">
-              <el-button color="rgba(192,148,86,1)" @click="addCart">
-                <img :src="getAssetURL('cart.png')" class="el-icon--left" />
+              <el-button type="primary" @click="addCart">
+                <img :src="getAssetURL('header/shop.svg')" class="el-icon--left" />
                 {{ $t('add_cart') }}
               </el-button>
             </div>
@@ -394,7 +394,7 @@ onUnmounted(() => {
 
 <style scoped lang="less">
 .main {
-  background-color: var(--color-333333);
+  background-color: var(--color-fff);
 
   .banner {
     max-width: 1920px;
@@ -476,6 +476,7 @@ onUnmounted(() => {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid rgba(187,187,187,1);
     img {
       width: 100%;
       border-radius: 15px;
@@ -484,6 +485,7 @@ onUnmounted(() => {
     .default-img {
       width: 200px;
       height: 200px;
+      object-fit: contain;
     }
   }
 
@@ -529,7 +531,7 @@ onUnmounted(() => {
 .pro-info-spec {
   flex: 1;
   .info-spec-title {
-    color: rgba(192, 148, 86, 1);
+    // color: var(--color-006838);
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 30px;
@@ -539,7 +541,7 @@ onUnmounted(() => {
 .info-spec-sku {
   .spec-sku-title {
     line-height: 23px;
-    color: rgba(255, 255, 255, 1);
+    // color: rgba(255, 255, 255, 1);
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -551,10 +553,10 @@ onUnmounted(() => {
     gap: 10px;
     flex-wrap: wrap;
     .spec-sku-item {
-      color: rgba(255, 255, 255, 1);
+      // color: rgba(255, 255, 255, 1);
       font-size: 14px;
       text-align: center;
-      border: 1px solid rgba(255, 255, 255, 1);
+      border: 1px solid rgba(187,187,187,1);
       min-width: 90px;
       height: 40px;
       border-radius: 10px;
@@ -566,7 +568,7 @@ onUnmounted(() => {
     }
 
     .spec-sku-item-check {
-      background-color: rgba(192, 148, 86, 1);
+      background-color: var(--color-006838);
       color: #fff;
       border: 0;
     }
@@ -575,7 +577,7 @@ onUnmounted(() => {
 
 .info-spec-price {
   line-height: 50px;
-  color: rgba(192, 148, 86, 1);
+  color: var(--color-006838);
   font-size: 36px;
   font-weight: bold;
   margin-top: 23px;
@@ -592,7 +594,7 @@ onUnmounted(() => {
     align-items: center;
     gap: 8px;
     .spec-qty-price {
-      color: rgba(255, 255, 255, 1);
+      // color: rgba(255, 255, 255, 1);
       font-size: 28px;
       font-weight: bold;
     }
@@ -608,7 +610,7 @@ onUnmounted(() => {
     align-items: center;
     gap: 10px;
     .spec-qty-label {
-      color: rgba(255, 255, 255, 1);
+      // color: rgba(255, 255, 255, 1);
       font-size: 14px;
       font-weight: bold;
     }
@@ -798,7 +800,7 @@ h2 {
 }
 
 .detail-content {
-  color: #fff;
+  // color: #fff;
   margin-top: 10px;
   max-width: 1140px;
   width: 100%;

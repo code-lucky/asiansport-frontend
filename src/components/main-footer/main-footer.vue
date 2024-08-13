@@ -35,7 +35,7 @@
     </div>
     <div class="container">
       <div class="footer-frame">
-        <div class="footer-tip">&copy;&nbsp;Copyright 2012 - 2024 Fencing Hall.</div>
+        <div class="footer-tip">&copy;&nbsp;Copyright 2012 - 2024 SportsFay.</div>
       </div>
       <!-- <div>English</div> -->
     </div>
@@ -143,7 +143,7 @@ const footerList = [
               margin-bottom: 5px;
               line-height: 22px;
               &:hover {
-                color: var(--color-b27437);
+                color: var(--color-006838);
               }
             }
           }

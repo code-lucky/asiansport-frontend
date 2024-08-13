@@ -40,13 +40,13 @@
           <div class="product-item" v-for="(item, idx) in productList" :key="idx" @click="goDetail(item.id)">
             <div class="product-img">
               <img v-if="item.cover_image" :src="item.cover_image ? item.cover_image : getAssetURL('default.png')" alt="" />
-              <img v-else style="width: 100px; height: 100px" :src="getAssetURL('default.png')" alt="" />
+              <img v-else style="width: 100px; height: 100px;object-fit: contain;" :src="getAssetURL('default.png')" alt="" />
             </div>
             <div class="product-detail">{{ item[langurageType('name_')] }}</div>
             <div class="product-info">
               <div>${{ item.price }}</div>
               <div>
-                <img :src="getAssetURL('cart-icon.png')" />
+                <img :src="getAssetURL('cart-icon.svg')" />
               </div>
             </div>
           </div>
@@ -240,7 +240,7 @@ onUnmounted(() => {
 
 <style scoped lang="less">
 .main {
-  background-color: var(--color-333333);
+  background-color: var(--color-fff);
 
   .banner {
     max-width: 1920px;
@@ -276,7 +276,7 @@ onUnmounted(() => {
   flex-direction: column;
   padding: 20px;
   flex-shrink: 0;
-
+  box-shadow: 0 0 6px #e7e7e7;
   h5 {
     margin: 0;
     margin-bottom: 12px;
@@ -287,7 +287,7 @@ onUnmounted(() => {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
+    
     .brand-item {
       background-color: #fff;
     }
@@ -333,7 +333,7 @@ onUnmounted(() => {
     cursor: pointer;
     justify-content: space-between;
     width: 250px;
-
+    
     .product-img {
       width: 100%;
       height: 250px;
@@ -343,7 +343,7 @@ onUnmounted(() => {
       align-items: center;
       justify-content: center;
       overflow: hidden;
-
+      border: 1px solid rgba(187,187,187,1);
       img {
         width: 100%;
         height: 100%;
@@ -352,13 +352,13 @@ onUnmounted(() => {
     }
 
     .product-detail {
-      color: #c09456;
+      // color: #c09456;
       // 自動換行
       white-space: normal;
     }
 
     .product-info {
-      color: #fff;
+      // color: #fff;
       display: flex;
       align-items: center;
       justify-content: space-between;
