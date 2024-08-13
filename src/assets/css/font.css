@@ -1,0 +1,8 @@
+@font-face {
+  font-family: GillSansMedium;
+  src: url('@/assets/font/gill-sans-2-cufonfonts/Gill Sans Medium.otf');
+}
+.font-GillSansMedium {
+  font-family: GillSansMedium;
+  font-weight: bold;
+}

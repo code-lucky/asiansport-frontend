@@ -1,0 +1,65 @@
+@font-face {
+  font-family: GillSansMedium;
+  src: url('@/assets/font/gill-sans-2-cufonfonts/Gill Sans Medium.otf');
+}
+html {
+  line-height: 1.2;
+  font-family: 'GillSansMedium', sans-serif;
+}
+/* reset.css样式重置文件 */
+/* margin/padding重置 */
+body,
+h1,
+h2,
+h3,
+ul,
+ol,
+li,
+p,
+dl,
+dt,
+dd {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  color: var(--color-212529);
+}
+
+/* a元素重置 */
+a {
+  text-decoration: none;
+  color: var(--color-212529);
+}
+
+/* img的vertical-align重置 */
+img {
+  vertical-align: top;
+}
+
+/* ul, ol, li重置 */
+ul,
+ol,
+li {
+  /* list-style: none; */
+}
+
+/* 对斜体元素重置 */
+i,
+em {
+  font-style: normal;
+}
+div {
+  box-sizing: border-box;
+}
+
+.swal2-container{
+  z-index: 2099 !important;
+}
+
+.swal2-confirm{
+  background-color: var(--color-b27437) !important;
+}

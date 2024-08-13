@@ -1,0 +1,26 @@
+image: atlassian/default-image:3
+
+pipelines:
+  branches:
+    develop:
+      - step:
+          name: 'UAT Launch'
+          deployment: Develop
+          script:
+            - pipe: atlassian/ssh-run:0.2.8
+              variables:
+                SSH_USER: $SSH_USER
+                SERVER: $SERVER
+                PORT: $SSH_PORT
+                COMMAND: 'cd /home/fencinghall/www/frontend && git restore . && git pull origin develop' 
+    master:
+      - step:
+          name: 'PRD Launch'
+          deployment: Production
+          script:
+            - pipe: atlassian/ssh-run:0.2.8
+              variables:
+                SSH_USER: $SSH_USER
+                SERVER: $SERVER
+                PORT: $SSH_PORT
+                COMMAND: 'echo a' 
