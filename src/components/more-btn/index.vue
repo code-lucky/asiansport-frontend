@@ -1,6 +1,6 @@
 <template>
     <div class="more-btn">
-        <el-button color="#C09456" @click="more">More Products</el-button>
+        <el-button type="primary" @click="more">More Products</el-button>
     </div>
 </template>
 <script setup>

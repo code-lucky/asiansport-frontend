@@ -98,7 +98,7 @@ const footerList = [
 
 <style scoped lang="less">
 .footer {
-  background: var(--color-c09456);
+  background: var(--color-f2f2f2);
   .footer-content {
     padding: 40px 0 0 0;
     border-bottom: 1px solid var(--color-b4bbc3);

@@ -24,7 +24,15 @@
             </template>
           </div> -->
           <div class="brand-list" v-if="brandList.length">
-            <el-carousel :interval="0" indicator-position="none" style="width: 100%" :activeIndex="brandIndex" arrow="always" @change="changeBrandIndex()" autoplay="false">
+            <el-carousel
+              :interval="0"
+              indicator-position="none"
+              style="width: 100%"
+              :activeIndex="brandIndex"
+              arrow="always"
+              @change="changeBrandIndex()"
+              autoplay="false"
+            >
               <el-carousel-item v-for="(i, index) in Math.ceil(Number(brandList.length / brandNumber))" :key="index" class="brand-box">
                 <div class="brand-content-box">
                   <template v-for="(item, idx) in brandList" :key="idx">
@@ -203,7 +211,7 @@ onUnmounted(() => {
 
 <style scoped lang="less">
 .main {
-  background-color: var(--color-333333);
+  background-color: var(--color-fff);
   .banner {
     max-width: 1920px;
     margin: 0 auto;
@@ -296,6 +304,7 @@ onUnmounted(() => {
         justify-content: center;
         overflow: hidden;
         cursor: pointer;
+        border: 1px solid #bbbbbb;
         img {
           object-fit: cover;
           width: 100%;
@@ -341,7 +350,7 @@ onUnmounted(() => {
         align-items: center;
         justify-content: center;
         overflow: hidden;
-
+        border: 1px solid rgba(187, 187, 187, 1);
         img {
           width: 100%;
           height: 100%;
@@ -349,13 +358,13 @@ onUnmounted(() => {
       }
 
       .product-detail {
-        color: #c09456;
+        color: var(--color-333);
         // 自動換行
         white-space: normal;
       }
 
       .product-info {
-        color: #fff;
+        color: var(--color-333);
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -391,11 +400,13 @@ onUnmounted(() => {
 :deep(.brand-list .el-carousel__arrow--left) {
   background-color: #fff;
   color: #333;
+  border: 1px solid rgba(187, 187, 187, 1);
 }
 
 :deep(.brand-list .el-carousel__arrow--right) {
   background-color: #fff;
   color: #333;
+  border: 1px solid rgba(187, 187, 187, 1);
 }
 
 @media (max-width: 1310px) {

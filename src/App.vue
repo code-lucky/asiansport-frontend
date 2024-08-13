@@ -65,6 +65,6 @@ onBeforeMount(() => {
 <style scoped lang="less"></style>
 <style>
 .el-drawer {
-  background-color: #c09456 !important;
+  background-color: var(--color-fff) !important;
 }
 </style>

@@ -94,7 +94,7 @@
               />
             </el-select>
             <a :href="item.path" v-else>
-              <el-badge :value="cartListCache.length" type=" " v-if="item.id == 2">
+              <el-badge color="var(--color-006838)":value="cartListCache.length" type=" " v-if="item.id == 2">
                 <img :src="item.icon" :style="{ width: `${item.width}px`, height: `${item.height}px` }" />
               </el-badge>
               <img :src="item.icon" v-else :style="{ width: `${item.width}px`, height: `${item.height}px` }" />
@@ -184,7 +184,7 @@
                 <div class="back-test">{{ $t('back_to_event') }}</div>
               </div>
               <div class="right-confirm-btn">
-                <el-button type="primary" color="#000" @click="goCheckout"
+                <el-button type="primary" @click="goCheckout"
                   >{{ $t('proceed_to_checkout') }}<el-icon class="el-icon--left"><ArrowRight /></el-icon
                 ></el-button>
               </div>
@@ -717,7 +717,7 @@ onUnmounted(() => {
   left: 0;
   right: 0;
   // padding: 10px 0;
-  background-color: var(--color-333333);
+  background-color: var(--color-fff);
   // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   z-index: 1000;
   .header-frame {
@@ -773,13 +773,13 @@ onUnmounted(() => {
         align-items: center;
         gap: 6px;
         line-height: 25px;
-        background-color: var(--color-333333);
-        color: #fff;
+        background-color: var(--color-fff);
+        color: var(--color-333);
         a {
           display: flex;
           align-items: center;
           gap: 2px;
-          color: #fff;
+          color: var(--color-333);
         }
 
         .prefix {
@@ -811,7 +811,7 @@ onUnmounted(() => {
         :deep(.el-select__wrapper) {
           font-size: 16px;
           padding: 0;
-          background-color: #333333 !important;
+          // background-color: #333333 !important;
         }
       }
     }
@@ -823,7 +823,7 @@ onUnmounted(() => {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-c09456);
+    background-color: var(--color-f2f2f2);
     .header-nav-box {
       padding: 0 30px;
       width: 1200px;
@@ -888,7 +888,7 @@ onUnmounted(() => {
         .el-select__wrapper {
           box-shadow: none;
           border: none;
-          background-color: #333333 !important;
+          // background-color: #333333 !important;
         }
         .el-select-dropdown__item {
           padding: 0 20px;
@@ -1349,7 +1349,7 @@ onUnmounted(() => {
 
 .hover-nav-box {
   width: 100%;
-  background-color: var(--color-c09456);
+  background-color: var(--color-f2f2f2);
   // max-height: 400px;
   overflow-y: auto;
   // 隱藏滾動條
